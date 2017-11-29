@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Show Students Grades</h1>
+<table border="true">
+    
+    <% students.forEach(function(Student){ %>
+        <tr>
+            <td>id </td><td style="color:red; font-size:1em"><%= Student.s_id %></td>
+            <td>first name </td><td style="color:red; font-size:1em"><%= Student.f_name %></td>
+            <td>math grade</td><td style="color:red; font-size:1em"> <%= Student.math_grade %></td>
+            <td>english grade </td><td style="color:red; font-size:1em"><%= Student.english_grade %></td>
+        </tr>
+    <% }) %>
+    
+</table>
+
+
+</body>
+</html>
